@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Visualization - Blackstone Conservation District</title>
+    <link rel="preload" href="typefaces/GT-Pressura/GT-Pressura-Extended-Medium-Trial.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="sound.css">
+    <script src="sound.js" defer></script>
+</head>
+<body>
+    <canvas id="pixelCanvas"></canvas>
+
+    <!-- Intro Animation -->
+    <div class="intro-screen" id="intro-screen">
+        <div class="intro-text">
+            <span class="typing-effect">SOUNDS</span>
+            <span class="typing-effect">HERE AND HEAR</span>
+            <span class="typing-effect">NATURAL</span>
+            <span class="typing-effect">AND UNNATUAL </span>
+        </div>
+    </div>
+
+    <!-- Description box -->
+    <div class="description-box" id="description-box">
+        <div class="title" id="description-title"></div>
+        <div class="body" id="description-body"></div>
+    </div>
+
+    <div class="container">
+        <!-- Crosshair lines -->
+        <div class="line line-horizontal"></div>
+        <div class="line line-vertical"></div>
+
+        <!-- Center point -->
+        <div class="center-point"></div>
+
+        <!-- Axis labels -->
+        <div class="label label-top">NATURAL</div>
+        <div class="label label-left">FAR</div>
+        <div class="label label-right">CLOSE</div>
+        <div class="label label-bottom">INDUSTRIAL</div>
+
+      
+
+        <div class="title-box">
+             <div class="title-text" style="background-color: #d4ff00;">↵ </div>
+             <div class="title-text">SOUND AND SIGHT</div>
+            <div class="title-text">HEAR AND HEAR</div>
+            <div class="title-text">NATURAL AND UNNATURAL</div>
+        </div>
+
+        <!-- Data points with audio and descriptions -->
+        <!-- 🐦 BIRD - Natural/Far (top-left quadrant) -->
+        <div class="point" style="top: 25%; left: 30%;" data-label="Bird" data-audio="sound Assets/bird.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🌳 LEAVES - Natural/Close (top-right quadrant) -->
+        <div class="point" style="top: 35%; left: 65%;" data-label="Leaves" data-audio="sound Assets/leaves.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🦆 DUCK - Natural/Close (top-right quadrant) -->
+        <div class="point" style="top: 20%; left: 75%;" data-label="Duck" data-audio="sound Assets/duck.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🐕 DOG BARK - Industrial/Far (bottom-left quadrant) -->
+        <div class="point" style="top: 65%; left: 25%;" data-label="Dog Bark" data-audio="sound Assets/dog bark.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 👶 CHILDREN - Industrial/Far (bottom-left quadrant) -->
+        <div class="point" style="top: 70%; left: 40%;" data-label="Children" data-audio="sound Assets/children.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🚗 CAR - Industrial/Close (bottom-right quadrant) -->
+        <div class="point" style="top: 80%; left: 70%;" data-label="Car" data-audio="sound Assets/car2.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🚲 BIKE - Industrial/Close (bottom-right quadrant) -->
+        <div class="point" style="top: 75%; left: 85%;" data-label="Bike" data-audio="sound Assets/bike.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- ✈️ AIRPLANE - Industrial/Close (right side) -->
+        <div class="point" style="top: 40%; left: 80%;" data-label="Airplane" data-audio="sound Assets/airplane.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🐛 INSECT - Natural/Far (top-left quadrant) -->
+        <div class="point" style="top: 30%; left: 20%;" data-label="Insect" data-audio="sound Assets/insect.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🗣️ TALKING - Industrial/Close (center-right) -->
+        <div class="point" style="top: 60%; left: 60%;" data-label="Talking" data-audio="sound Assets/talking.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🐦 WOODPECKER - Natural/Far (top-left quadrant) -->
+        <div class="point" style="top: 15%; left: 25%;" data-label="Woodpecker" data-audio="sound Assets/woodpecker.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🦆 DUCK 2 - Natural/Close (top-right quadrant) -->
+        <div class="point" style="top: 28%; left: 70%;" data-label="Duck" data-audio="sound Assets/duck.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- 🐕 DOG BARK 2 - Industrial/Far (bottom-left quadrant) -->
+        <div class="point" style="top: 72%; left: 30%;" data-label="Dog Bark" data-audio="sound Assets/dog bark.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+
+        <!-- ✈️ AIRPLANE 2 - Industrial/Close (bottom-right quadrant) -->
+        <div class="point" style="top: 68%; left: 75%;" data-label="Airplane" data-audio="sound Assets/airplane.wav" data-description="This is some body text description of the sound sources we discovered when we are exploring around the forest"></div>
+    </div>
+</body>
+</html>
